@@ -67,7 +67,6 @@ function App() {
           property="flavor"
         />
       </section>
-        {/* <button id='calculate-button'>CALCULER</button> */}
       <section id='results'>
         <Results
           img={Base}

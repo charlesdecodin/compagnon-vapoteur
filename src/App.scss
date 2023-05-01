@@ -10,7 +10,7 @@ body {
   font-weight: 800;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,26 +43,6 @@ body {
   align-items: center;
 }
 
-#calculate-button {
-  background-color: #60BAE2;
-  color: black;
-  font-weight: 800;
-  font-size: 25px;
-  margin: 25px 0 60px 0;
-  padding: 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 10px 0px 0px #000000;
-    box-shadow: 0px 10px 0px 0px #000000;
-    &:hover{
-      background-color: #459abe;
-    }
-  &:active {
-    -webkit-box-shadow: 0px 0px 0px 0px #000000;
-    box-shadow: 0px 0px 0px 0px #000000;
-    transform: translateY(10px);
-  }
-}
-
 .container-input {
   display: flex;
   flex-direction: column;
@@ -86,6 +66,7 @@ body {
   border: solid 5px;
   border-radius: 10px;
   background-color: #FFF;
+
   &:after {
     position: absolute;
     font-size: 25PX;
@@ -95,12 +76,14 @@ body {
   }
 }
 
-.quantity{
+.quantity {
   &:after {
     content: "ML";
   }
 }
-.nicotine, .flavor{
+
+.nicotine,
+.flavor {
   &:after {
     content: "%";
   }
@@ -149,22 +132,29 @@ body {
   font-size: 40px;
 }
 
-@media (min-width: 940px)  {
-  #results, #inputs{
+@media (min-width: 1045px) {
+
+  #subtitle{
+    width: 400px;
+    margin: 20px;
+  }
+
+  #results,
+  #inputs {
     flex-direction: row;
   }
 
-  #inputs{
+  #inputs {
     width: 100%;
     justify-content: center;
     margin-bottom: 50px;
   }
 
-  #results{
+  #results {
     margin-top: -50px;
   }
-  
-  .container-input{
+
+  .container-input {
     margin: 0 40px;
   }
 
