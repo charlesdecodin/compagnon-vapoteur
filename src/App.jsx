@@ -8,7 +8,11 @@ import Flavor from './images/flav.png'
 function App() {
   return (
     <div className="App">
-      <div id='inputs'>
+      <h1 id='title'>Compagnon Vapoteur</h1>
+      <div id='subtitle-container'>
+        <h2 id="subtitle">Calculateur pour fabriquer son liquide DIY</h2>
+      </div>
+      <section id='inputs'>
         <Input
           label='Quantité'
           backgroundColor='#FF82F2'
@@ -21,8 +25,9 @@ function App() {
           label="Pourcentage d'arôme"
           backgroundColor='#6DCC6D'
         />
-      </div>
-      <div id='results'>
+        <button id='calculate-button'>CALCULER</button>
+      </section>
+      <section id='results'>
         <Results
           img={Base}
           value={80}
@@ -41,7 +46,7 @@ function App() {
           bcgColor="#6DCC6D"
           title="Arôme"
         />
-      </div>
+      </section>
 
     </div>
   );
