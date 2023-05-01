@@ -86,14 +86,23 @@ body {
   border: solid 5px;
   border-radius: 10px;
   background-color: #FFF;
-
   &:after {
     position: absolute;
-    content: "ML";
     font-size: 25PX;
     top: 50%;
     right: 20px;
     transform: translate(0, -50%);
+  }
+}
+
+.quantity{
+  &:after {
+    content: "ML";
+  }
+}
+.nicotine, .flavor{
+  &:after {
+    content: "%";
   }
 }
 
@@ -103,7 +112,7 @@ body {
   font-weight: 800;
   font-size: 25px;
   padding: 4px;
-  text-align: center;
+  text-align: right;
 }
 
 .container-result {
@@ -153,7 +162,6 @@ body {
 
   #results{
     margin-top: -50px;
-    align-items: baseline;
   }
   
   .container-input{
