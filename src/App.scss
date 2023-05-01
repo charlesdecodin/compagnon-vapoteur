@@ -4,7 +4,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   min-height: 100vh;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +23,16 @@ body {
 .container-input>label {
   margin-bottom: 17px;
   font-size: 18px;
-  
+
 }
 
-.container-input>span{
+.container-input>span {
   position: relative;
   width: 180px;
   border: solid 5px;
   border-radius: 10px;
   background-color: #FFF;
+
   &:after {
     position: absolute;
     content: "ML";
@@ -50,4 +50,38 @@ body {
   font-size: 25px;
   padding: 4px;
   text-align: center;
+}
+
+.container-result {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 30px;
+}
+
+.container-result>div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+.container-result>div:nth-child(1)>img{
+  align-self: center;
+  font-size: 30px;
+}
+
+.container-result>div:nth-child(2) {
+  margin-left: 40px;
+}
+
+.container-result>div:nth-child(2)>div{
+  background-color: pink;
+  width: 100%;
+  height: 16px;
+  margin-top: -7px;
+}
+
+.container-result>div:nth-child(2)>p {
+  font-size: 40px;
 }
