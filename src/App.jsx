@@ -25,8 +25,8 @@ function App() {
           label="Pourcentage d'arôme"
           backgroundColor='#6DCC6D'
         />
-        <button id='calculate-button'>CALCULER</button>
       </section>
+        <button id='calculate-button'>CALCULER</button>
       <section id='results'>
         <Results
           img={Base}
